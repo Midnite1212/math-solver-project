@@ -1,0 +1,46 @@
+.introduction-jumbotron {
+  height: 27.5vh;
+  min-height: 275px;
+  text-align: left;
+  /* background: url("../assets/hero-banner.jpg") no-repeat center center; */
+  border: none !important;
+  border-radius: 0.8rem !important;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.12);
+  background-color: #003366 !important;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  padding: 15px 25px !important;
+}
+
+.introduction-jumbotron .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.introduction-jumbotron-description {
+  margin-right: 20px;
+}
+.introduction-jumbotron-description h1 {
+  font-weight: 700;
+  color: #fff;
+}
+.introduction-jumbotron-description p {
+  font-size: 24px;
+  color: #fff;
+}
+.introduction-jumbotron-image {
+  height: 24vh;
+  min-height: 240px;
+}
+.introduction-jumbotron-image img {
+  height: 100%;
+  width: auto;
+}
+.introduction-jumbotron-button {
+  background-color: #cc9900 !important;
+  border-color: #cc9900 !important;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12);
+}
