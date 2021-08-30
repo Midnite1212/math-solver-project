@@ -27,7 +27,8 @@
   border: solid 1px var(--light-grey);
 }
 
-.title {
+.simple-title,
+.finance-title {
   background-color: var(--dark-blue);
   color: var(--lighter-grey);
   padding: 1em;
@@ -73,8 +74,15 @@
 
 .show-buttons {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   grid-gap: 3px;
+}
+
+.simple.show-buttons {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.finance.show-buttons {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .error-div {

@@ -3,8 +3,8 @@ import { evaluate } from 'mathjs'
 import DisplayScreen from '../components/DisplayScreen'
 import ShowButtons from '../components/ShowButtons'
 import ErrorComponent from '../components/ErrorComponent'
-import Title from '../components/Title'
-import '../styles/simple.scss'
+import {simpleTitle} from '../components/Title'
+import '../styles/calculator.scss'
 
 const SimpleCalculator = () => {
   const calcExpression = {
@@ -44,7 +44,7 @@ const SimpleCalculator = () => {
 
   return (
     <div className='Container'>
-      <Title />
+      {simpleTitle()}
       <div className="buttonDisplay">
 				{showError && <ErrorComponent msg={'Please enter a number first'} />}
 
@@ -54,7 +54,8 @@ const SimpleCalculator = () => {
 
 				<ShowButtons
 					computeValue={computeValue}
-					computeDisplayExpression={computeDisplayExpression} />
+					computeDisplayExpression={computeDisplayExpression} 
+          type='simple' />
       </div>
     </div>
   );
